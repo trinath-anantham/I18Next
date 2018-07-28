@@ -1,11 +1,5 @@
-var http = require('http');
-var express = require('express');
-var app = express();
-var fs = require("fs");
-app.use('/static', express.static('ui'))
-http.createServer(function(request, response) {
-    console.log("Request url :"+request.url.toString());
-}).listen(3000);
-
-
+var controller = require('./basicControllers.js');
+var app = controller.app;
 console.log("Server started");
+app.listen(9192);
+console.log("Server listened to 9192 port ");
