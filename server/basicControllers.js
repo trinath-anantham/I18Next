@@ -1,4 +1,5 @@
 var config = require('./config.js');
+var i18next = require('./internationalization/i18next.js');
 var express = config.express;
 var app = config.app;
 var path = config.path;

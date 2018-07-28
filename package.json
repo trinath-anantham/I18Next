@@ -2,6 +2,9 @@
     "name": "Express",
     "version": "0.0.1",
     "dependencies": {
-        "express": "latest"
+        "express": "latest",
+        "i18next": "^11.5.0",
+        "i18next-express-middleware": "^1.2.0",
+        "react": "^16.4.1"
     }
 }
