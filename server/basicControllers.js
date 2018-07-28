@@ -1,6 +1,7 @@
-var express = require('express');
-var app = express();
-var path = require('path')
+var config = require('./config.js');
+var express = config.express;
+var app = config.app;
+var path = config.path;
 
 app.use(express.static(path.join(__dirname, '/../static')));
 
